@@ -22,12 +22,14 @@ public class TakeSubscriptionPage extends BasePage {
     @FindBy(xpath = "//iframe[@id='payment-iframe']")
     private WebElement selectFrame;
 
-    public void takeSubscription() {
+    public TakeSubscriptionPage takeSubscription() {
         takeSubscription.click();
+        return this;
     }
 
-    public void buyBook() {
+    public TakeSubscriptionPage buyBook() {
         buyBook.click();
+        return this;
     }
 
     public void switchTo() {

@@ -1,6 +1,7 @@
 package com.vildanova.pages;
 
 import com.vildanova.base.BasePage;
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -16,7 +17,8 @@ public class MenuPage extends BasePage {
     @FindBy(xpath = "//a[@href='/znaniya-navyki/']/../ul/li/a[text()='Саморазвитие / личностный рост']")
     private WebElement selectSection;
 
-    public void selectSelection(){
+    @Step("Выбрать подкатегорию")
+    public void selectSubTopic(){
         selectSection.click();
     }
 }

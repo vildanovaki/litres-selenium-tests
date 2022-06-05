@@ -4,6 +4,7 @@
     <test verbose="2" preserve-order="true" name="C:/Users/vilda/Projects-autotests/litres-selenium-test">
         <classes>
             <class name="com.vildanova.tests.FirstTests"></class>
+            <class name="com.vildanova.tests.SecondTests"></class>
         </classes>
     </test>
 </suite>

@@ -1,6 +1,7 @@
 package com.vildanova.pages;
 
 import com.vildanova.base.BasePage;
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -19,10 +20,12 @@ public class MainPage extends BasePage {
     @FindBy(xpath = "//div[@class='LowerMenu-module__wrapper']//a[@href='/pages/new_genres/'][1]")
     private WebElement selectMenu;
 
+    @Step("Выбрать книгу")
     public void chooseBook() {
         selectBook.click();
     }
 
+    @Step("Открыть меню")
     public void selectMenu(){
         selectMenu.click();
     }

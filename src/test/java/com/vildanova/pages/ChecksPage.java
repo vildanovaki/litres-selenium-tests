@@ -28,8 +28,9 @@ public class ChecksPage extends BasePage {
         assertEquals(checkButtonReviews.getText(), "+ Оставить отзыв");
     }
 
-    public void checkNameOfButton() {
+    public ChecksPage checkNameOfButton() {
         assertEquals(checkNameOfButton.getText(), "ПЕРЕЙТИ К ОПЛАТЕ");
+        return this;
     }
 
     public void checkTitle() {
