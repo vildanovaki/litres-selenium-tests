@@ -20,13 +20,13 @@ public class MainPage extends BasePage {
     @FindBy(xpath = "//div[@class='LowerMenu-module__wrapper']//a[@href='/pages/new_genres/'][1]")
     private WebElement selectMenu;
 
-    @Step("Выбрать книгу")
+    @Step("Выбрать книгу по середине страницы")
     public void chooseBook() {
         selectBook.click();
     }
 
-    @Step("Открыть меню")
-    public void selectMenu(){
+    @Step("Открыть меню в левом углу")
+    public void selectMenu() {
         selectMenu.click();
     }
 }

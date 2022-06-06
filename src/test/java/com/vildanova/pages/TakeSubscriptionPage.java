@@ -1,6 +1,7 @@
 package com.vildanova.pages;
 
 import com.vildanova.base.BasePage;
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -22,16 +23,19 @@ public class TakeSubscriptionPage extends BasePage {
     @FindBy(xpath = "//iframe[@id='payment-iframe']")
     private WebElement selectFrame;
 
+    @Step("Нажать на кнопку \"ВЗЯТЬ ПО АБОНЕМЕНТУ\"")
     public TakeSubscriptionPage takeSubscription() {
         takeSubscription.click();
         return this;
     }
 
+    @Step("Нажать на кнопку \"КУПИТЬ АБОНЕМЕНТ ЗА\"")
     public TakeSubscriptionPage buyBook() {
         buyBook.click();
         return this;
     }
 
+    @Step("Перейти во фрейм с id payment-iframe")
     public void switchTo() {
         driver.switchTo().frame(selectFrame);
     }

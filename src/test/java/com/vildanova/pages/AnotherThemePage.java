@@ -24,22 +24,22 @@ public class AnotherThemePage extends BasePage {
     @FindBy(xpath = "//div[@class='line line-2']/div[2]/div")
     private WebElement selectBook;
 
-    @Step("Нажать на кнопку")
-    public AnotherThemePage selectButton(){
-        step("Дополнительное действие", ()->{
+    @Step("Нажать на кнопку \"Электронные и аудиокниги\"")
+    public AnotherThemePage selectButton() {
+        step("Дополнительное действие - проверка", () -> {
             selectButton.click();
         });
         return this;
     }
 
-    @Step("Выбрать тему из меню")
-    public AnotherThemePage selectThemeOfMenu(){
+    @Step("Выбрать в выпадающем списке \"Аудиокниги\"")
+    public AnotherThemePage selectThemeOfMenu() {
         selectThemeOfMenu.click();
         return this;
     }
 
-    @Step("Выбрать книгу")
-    public void selectBook(){
+    @Step("На открывшейся странице выбрать любую книгу")
+    public void selectBook() {
         selectBook.click();
     }
 }

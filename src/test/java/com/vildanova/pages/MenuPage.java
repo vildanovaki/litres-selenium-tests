@@ -17,8 +17,8 @@ public class MenuPage extends BasePage {
     @FindBy(xpath = "//a[@href='/znaniya-navyki/']/../ul/li/a[text()='Саморазвитие / личностный рост']")
     private WebElement selectSection;
 
-    @Step("Выбрать подкатегорию")
-    public void selectSubTopic(){
+    @Step("Выбрать подкатегорию \"Саморазвитие/личностный\" рост в разделе \"Знания и навыки\"")
+    public void selectSubTopic() {
         selectSection.click();
     }
 }

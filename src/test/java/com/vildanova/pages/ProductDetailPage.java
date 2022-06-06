@@ -1,6 +1,7 @@
 package com.vildanova.pages;
 
 import com.vildanova.base.BasePage;
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -16,6 +17,7 @@ public class ProductDetailPage extends BasePage {
     @FindBy(xpath = "//li[@data-name='otzivi']")
     private WebElement selectReviews;
 
+    @Step("Перейти к отзывам книги")
     public void goToReviews() {
         selectReviews.click();
     }
